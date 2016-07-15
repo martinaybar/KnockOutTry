@@ -15,3 +15,107 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* ----------------------------------------- 
+ Productive Min TFEs dialog NEW ****
+------------------------------------------*/
+.spacer-m-f
+{
+    margin-top: 5px !important;
+}
+
+.table-header th, .table-footer th, .table-footer td
+{
+    cursor: default;
+    background-color: #888888;
+    border: solid 1px #222222;
+    color: #ffffff;
+    padding: 1px 5px 1px 5px;
+    text-align: center;
+}
+
+.table-header th em
+{
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.table-footer td
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-header-lite th
+{
+    background-color: #BBBBBB;
+    border: solid 1px #555555;
+    color: #444444;
+    padding: 1px 5px 1px 5px;
+    text-align: center;
+}
+
+.min-hrs-text-lbl
+{
+    width: 70px;
+    background-color: #888888 !important;
+    border: solid 1px #222222 !important;
+    color: #ffffff !important;
+    padding: 1px 5px 1px 5px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.min-hrs-chk
+{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    height: 1em;
+    width: 20px;
+}
+.min-hrs-day, .min-hrs-default
+{
+    width: 50px;
+}
+.min-hrs-by-day
+{
+    width: 60px;
+}
+
+.min-hrs-prod-ftes, .min-hrs-prod-ftes-default
+{
+    width: 100px;
+}
+.no-display
+{
+    display: none;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix
+{
+    display: inline-block;
+}
+
+.num
+{
+    text-align: right;
+}
+
+.min-hrs-ops
+{
+    padding-top: 5px;
+}
+.min-hrs-ops a.button
+{
+    float: left;
+    margin-right: 2px;
+}

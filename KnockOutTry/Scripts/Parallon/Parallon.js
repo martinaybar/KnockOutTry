@@ -19,8 +19,8 @@ function getProdMinHoursFTEsViews() {
 
 function getProdMinHoursFTEsData() {
     $.ajax({
-        url: "/Forecast/GetProdMinHoursFTEsData",
-        data: { "planId": GlobalValues.PlanId, "wftDeptId": GlobalValues.WftDepartmentId },
+        url: "/Parallon/GetProdMinHoursFTEsData",
+        //data: { "planId": GlobalValues.PlanId, "wftDeptId": GlobalValues.WftDepartmentId },
         success: function (result) {
             if (result.Successful) {
                 prodMinFtesDataModel = result.Data;
@@ -35,7 +35,7 @@ function getProdMinHoursFTEsData() {
 
 function refreshMinHoursFTEsDialog() {
 
-    var views = getProdMinHoursFTEsViews();
+    //var views = getProdMinHoursFTEsViews();
 
     var model = getProdMinHoursFTEsData();
 
@@ -53,13 +53,14 @@ function onReadOnlyMinFTEsButtonClick() {
     //Refresh data by ajax call
     refreshMinHoursFTEsDialog();
 
+
     currentStepsDialog = $("#minftes-dialog").dialog({
         autoOpen: true,
         resizable: false,
         height: "auto",
         width: "auto",
         modal: true,
-        open: NoOfDays(),
+        //open: NoOfDays(),
         buttons: {
             "Cancel": function () { $(this).dialog('close'); }
         }
@@ -84,7 +85,7 @@ function onMinFTEsButtonClick() {
         height: "auto",
         width: "auto",
         modal: true,
-        open: NoOfDays(),
+        //open: NoOfDays(),
         buttons: {
             "Save": function () {
                 if (saveStepTargets()) {
@@ -142,3 +143,4 @@ $(document).ready(function () {
 
 });
 // end of $(document).ready()
+

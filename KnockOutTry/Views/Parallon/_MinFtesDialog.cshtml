@@ -1,4 +1,4 @@
-﻿<%-- Productive Min FTEs --%>
+﻿@*<%-- Productive Min FTEs --%>*@
 <div class="minFtesContent">
     <div style="margin: 10px 0px;">
         Define Min Hours
@@ -9,7 +9,7 @@
         </select>
     </div>
 
-    <%-- By Day View--%>
+    @*<%-- By Day View--%>*@
     <div id="byDay" class="spacer-m-f">
         <div>
             <table>
@@ -382,3 +382,23 @@
 
 </div>
 
+<script>
+    $("#minHoursChoiceList").change(function () {
+        var selectedVal = this.value;
+
+        var byDay = $("#byDay"); //1
+        var byWeek = $("#minHoursByDayOfWeek"); //2
+        var byMonth = $("#minHoursByDayOfWeekPerMonth"); //3
+
+        byDay.addClass("no-display");
+        byWeek.addClass("no-display");
+        byMonth.addClass("no-display");
+
+        if (selectedVal == 1)
+            byDay.removeClass("no-display");
+        else if (selectedVal == 2)
+            byWeek.removeClass("no-display");
+        else if (selectedVal == 3)
+            byMonth.removeClass("no-display");
+    });
+</script>

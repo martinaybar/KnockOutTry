@@ -11,10 +11,12 @@
     @*<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>*@
     
-    
     <script src="~/Scripts/knockout-3.4.0.js"></script>
     <script src="~/Scripts/jquery-ui.js"></script>
     <script src="~/Scripts/knockout.mapping.js"></script>
+    
+    <link rel="stylesheet" href="~/Content/jquery-ui.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
 
 
     <script type="text/javascript">
@@ -55,8 +57,8 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/jquery")*@
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @*@RenderSection("scripts", required: false)*@
 </body>
 </html>

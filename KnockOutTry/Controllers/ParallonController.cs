@@ -23,7 +23,7 @@ namespace KnockOutTry.Controllers
         
         }
 
-        public JsonResult GetProductiveItems()
+        public JsonResult GetProdMinHoursFTEsData()
         {
             var items = new List<ProductiveMinFTEsItem>();
 
