@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/Parallon/Parallon.js"></script>
+
+
+<h2>Parallon</h2>
+
+
+
+ @*<%-- Productive Min FTEs --%>*@
+<div style="display: none">
+    <div id="minftes-dialog" title="Productive Min FTEs">
+    @{Html.RenderPartial("_MinFtesDialog");}
+    </div>
+</div>
+
+<a href="javascript:onMinFTEsButtonClick();" id="prodMinFtesEditBtn" class="custom-button">
+    Edit
+</a>
+<br />
+<a href="javascript:onReadOnlyMinFTEsButtonClick();" id="prodMinFtesViewBtn" class="custom-button">
+    View
+</a>

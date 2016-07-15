@@ -1,0 +1,138 @@
+﻿@model KnockOutTry.Models.ProductiveMinFTEsItem
+
+@{
+    ViewBag.Title = "ProdcutiveMin";
+}
+
+<h2>ProdcutiveMin</h2>
+
+<div>
+    <h4>ProductiveMinFTEsItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TargetId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EffMonthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EffMonthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefinedBY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefinedBY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursSun)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursSun)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursMon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursMon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursTue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursTue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursWed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursWed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursThu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursThu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursFri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursFri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinHoursSat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinHoursSat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetMinHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TargetMinHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductiveMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductiveMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdateDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
