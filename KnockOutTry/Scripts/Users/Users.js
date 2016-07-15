@@ -44,6 +44,13 @@
             return viewModel.Name() + " " + viewModel.LastName();
         }, this);
         viewModel.Month = 3;
+        viewModel.AddLines = ko.computed(function () {
+            viewModel.Name("Juan");
+            viewModel.LastName("KKK");
+            return;
+        }, this);
+
+
         ko.applyBindings(viewModel);
     });
 

@@ -7,7 +7,7 @@ function getProdMinHoursFTEsViews() {
         url: "/Forecast/GetProdMinHoursFTEsView",
         success: function (result) {
             if (result.Successful) {
-                $("#minftes-dialog" + GlobalValues.DepartmentNumber).html(result.Data);
+                $("#minftes-dialog").html(result.Data);
             }
             else {
                 HandlerError
