@@ -60,7 +60,6 @@ function onReadOnlyMinFTEsButtonClick() {
         height: "auto",
         width: "auto",
         modal: true,
-        //open: NoOfDays(),
         buttons: {
             "Cancel": function () { $(this).dialog('close'); }
         }
@@ -85,7 +84,6 @@ function onMinFTEsButtonClick() {
         height: "auto",
         width: "auto",
         modal: true,
-        //open: NoOfDays(),
         buttons: {
             "Save": function () {
                 if (saveStepTargets()) {
@@ -100,29 +98,30 @@ function onMinFTEsButtonClick() {
 
             "Cancel": function () {
                 var closeMain = false;
-                if (boolHasChanges) {
-                    $("#action-confirm").dialog({
-                        resizable: false,
-                        height: 150,
-                        width: 350,
-                        modal: true,
-                        buttons: {
-                            "Yes": function () {
-                                boolHasChanges = false;
-                                $(this).dialog('close');
-                                //                                refreshMinHoursFTEsDialog();
-                                //                                window.parent.$("#steps-dialog" + GlobalValues.DepartmentNumber).dialog('close');
-                            },
-                            "No": function () {
-                                $(this).dialog('close');
-                            }
-                        }
-                    });
-                }
-                else {
-                    $(this).dialog('close');
-                    //                    refreshMinHoursFTEsDialog();
-                }
+                //if (boolHasChanges) {
+                //    $("#action-confirm").dialog({
+                //        resizable: false,
+                //        height: 150,
+                //        width: 350,
+                //        modal: true,
+                //        buttons: {
+                //            "Yes": function () {
+                //                // boolHasChanges = false;
+                //                $(this).dialog('close');
+                //            //                                refreshMinHoursFTEsDialog();
+                //            //                                window.parent.$("#steps-dialog" + GlobalValues.DepartmentNumber).dialog('close');
+                //            },
+                //            "No": function () {
+                //                $(this).dialog('close');
+                //            }
+                //        }
+                //    });
+                //}
+                //else {
+                //    $(this).dialog('close');
+                //    //                    refreshMinHoursFTEsDialog();
+                //}
+                $(this).dialog('close');
             }
         }
     });
