@@ -22,8 +22,9 @@ function getProdMinHoursFTEsData() {
         url: "/Parallon/GetProdMinHoursFTEsData",
         //data: { "planId": GlobalValues.PlanId, "wftDeptId": GlobalValues.WftDepartmentId },
         success: function (result) {
-            if (result.Successful) {
-                prodMinFtesDataModel = result.Data;
+            if (result) {
+                //prodMinFtesDataModel = result.Data;
+                DoBinding(result);
             }
             else {
                 HandlerError
@@ -38,6 +39,36 @@ function refreshMinHoursFTEsDialog() {
     //var views = getProdMinHoursFTEsViews();
 
     var model = getProdMinHoursFTEsData();
+
+}
+function DoBinding(data) {
+  
+
+    var viewModel;
+
+       
+    viewModel = ko.mapping.fromJS(data);
+    //viewModel.FullName = ko.computed(function() {
+    //    return this.Name() + " " + this.LastName();
+    //}, this);
+    viewModel.Months = ko.observableArray([]);
+    var MonthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+    ];
+   
+    function Month(name,minHs, productMinFTEs) {
+        this.name= name;
+        this.minHs = minHs;
+        this.productMinFTEs = productMinFTEs;
+    }
+        for (i = 0; i < viewModel.FtesItems().length; ++i) {
+            viewModel.Months.push(new Month(MonthNames[i], viewModel.FtesItems()[1].MinHoursSun()))
+        }
+            ko.applyBindings(viewModel);
+      
+
+    
+
 
 }
 

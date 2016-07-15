@@ -34,7 +34,7 @@ namespace KnockOutTry.Controllers
 
             ProductiveMinViewModel prodViewModel = new ProductiveMinViewModel(items);
 
-            return Json(items, JsonRequestBehavior.AllowGet);
+            return Json(prodViewModel, JsonRequestBehavior.AllowGet);
         }
     }
 }

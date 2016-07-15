@@ -24,138 +24,19 @@
                         </th>
                     </tr>
                 </thead>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="January" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="February" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="March" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="April" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="May" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="June" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="July" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="August" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="September" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="October" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="November" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" class="min-hrs-text-lbl" readonly="readonly" value="December" title="January" />
-                    </td>
-                    <td>
-                        <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" value="0.000" />
-                    </td>
-                    <td>
-                        <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
-                    </td>
-                </tr>
+                <tbody data-bind="foreach: Months ">
+                    <tr>
+                        <td>
+                            <input type="text" class="min-hrs-text-lbl" readonly="readonly" data-bind="value: name  " />
+                        </td>
+                        <td>
+                            <input type="text" class="num int3dec3 min-hrs-by-day min-hrs-sun by-day" data-bind="value: minHs"  />
+                        </td>
+                        <td>
+                            <input type="text" class="num dec3 min-hrs-prod-ftes" value="0.000" readonly="Readonly" />
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
