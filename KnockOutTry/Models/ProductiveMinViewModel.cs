@@ -16,6 +16,7 @@ namespace KnockOutTry.Models
         {
             FtesItems = items;
             MonthSelected = 1;
+            IsReadOnly = true;
         }
     }
 }

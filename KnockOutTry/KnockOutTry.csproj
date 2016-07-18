@@ -208,6 +208,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\autoNumeric-1.7.4.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -237,6 +238,7 @@
     <Content Include="Scripts\knockout-3.4.0.js" />
     <Content Include="Scripts\knockout.mapping.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Parallon\Index2.js" />
     <Content Include="Scripts\Parallon\Parallon.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -261,6 +263,7 @@
     <Content Include="Views\Parallon\Index.cshtml" />
     <Content Include="Views\Parallon\ProdcutiveMin.cshtml" />
     <Content Include="Views\Parallon\_MinFtesDialog.cshtml" />
+    <Content Include="Views\Parallon\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

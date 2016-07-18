@@ -15,6 +15,12 @@ namespace KnockOutTry.Controllers
             return View();
         }
 
+        // GET: Parallon
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
         public ActionResult ProdcutiveMin()
         {
             ProductiveMinFTEsItem prod = new ProductiveMinFTEsItem() { TargetId = 1, ProductiveMin = 55, MinHoursSun = 0, MinHoursMon = 1, MinHoursTue = 2, MinHoursWed = 3, MinHoursThu = 4, MinHoursFri = 5, MinHoursSat = 6, TargetMinHours = 7, DefinedBY = 'M', EffMonthDate = new DateTime(2016, 1 + 1, 1) };
@@ -34,7 +40,9 @@ namespace KnockOutTry.Controllers
 
             ProductiveMinViewModel prodViewModel = new ProductiveMinViewModel(items);
 
-            return Json(items, JsonRequestBehavior.AllowGet);
+            return Json(prodViewModel, JsonRequestBehavior.AllowGet);
         }
+
+
     }
 }
